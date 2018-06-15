@@ -1,11 +1,13 @@
-firebase.initializeApp({
+var config = {
+    apiKey: "AIzaSyBRhgl84zFp1sMtN_9OAhaG6d9l0bsp0A0",
+    authDomain: "epr2-crud.firebaseapp.com",
+    databaseURL: "https://epr2-crud.firebaseio.com",
+    projectId: "epr2-crud",
+    storageBucket: "epr2-crud.appspot.com",
+    messagingSenderId: "128334792737"
+  };
+  firebase.initializeApp(config);
 
-    apiKey: "AIzaSyC6vyU6wJSkZbP2M7w05dXNz7ypUdypZLw",
-    authDomain: "nuevo-f337c.firebaseapp.com",
-    projectId: "nuevo-f337c"
-
-
-});
 var db = firebase.firestore();
 //agregar usuarios
 function guardar() {
